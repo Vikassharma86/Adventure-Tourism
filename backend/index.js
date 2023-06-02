@@ -3,6 +3,8 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const userRouter = require('./routers/userRouter');
+const locationRouter = require('./routers/locationRouter');
+const packageRouter = require('./routers/packageRouter');
 const cors = require('cors');
 const { PORT } = require('./config');
 
@@ -17,6 +19,8 @@ app.use(cors(
 app.use(express.json());
 // app.use(express.urlencoded({extended : true}));
 app.use('/user', userRouter);
+app.use('/location', locationRouter);
+app.use('/package', packageRouter);
 
 
 app.get('/', (req, res) => {

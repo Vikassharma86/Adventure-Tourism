@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../Logo";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: '#fd5d7c'}}>
       {/* Container wrapper */}
       <div className="container">
         {/* Toggle button */}
@@ -22,12 +23,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           {/* Navbar brand */}
           <a className="navbar-brand mt-2 mt-lg-0" href="#">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-              height={15}
-              alt="MDB Logo"
-              loading="lazy"
-            />
+            <Logo title="Adventure Tourism" />
           </a>
           {/* Left links */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
