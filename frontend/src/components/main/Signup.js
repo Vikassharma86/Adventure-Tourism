@@ -1,95 +1,100 @@
 import React from 'react'
 
 const Signup = () => {
-  return (
-<section className="h-100 h-custom" style={{ backgroundColor: "#8fc4b7" }}>
-  <div className="container py-5 h-100">
-    <div className="row d-flex justify-content-center align-items-center h-100">
-      <div className="col-lg-8 col-xl-6">
-        <div className="card rounded-3">
-          <img
-            src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            className="w-100"
-            style={{
-              borderTopLeftRadius: ".3rem",
-              borderTopRightRadius: ".3rem"
-            }}
-            alt="Sample photo"
-          />
-          <div className="card-body p-4 p-md-5">
-            <h3 className="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">
-              Registration Info
-            </h3>
-            <form className="px-md-2">
-              <div className="form-outline mb-4">
-                <input
-                  type="text"
-                  id="form3Example1q"
-                  className="form-control"
-                />
-                <label className="form-label" htmlFor="form3Example1q">
-                  Name
-                </label>
-              </div>
-              <div className="row">
-                <div className="col-md-6 mb-4">
-                  <div className="form-outline datepicker">
+  return (<section
+    className="vh-100 bg-image"
+    style={{
+      backgroundImage:
+        'url("https://images.pexels.com/photos/303040/pexels-photo-303040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")'
+    }}
+  >
+    <div className="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div className="container h-100">
+        <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div className="card" style={{ borderRadius: 15 }}>
+              <div className="card-body p-5">
+                <h2 className="text-uppercase text-center mb-5">
+                  Create an account
+                </h2>
+                <form>
+                  <div className="form-outline mb-4">
                     <input
                       type="text"
-                      className="form-control"
-                      id="exampleDatepicker1"
+                      id="form3Example1cg"
+                      className="form-control form-control-lg"
                     />
-                    <label htmlFor="exampleDatepicker1" className="form-label">
-                      Select a date
+                    <label className="form-label" htmlFor="form3Example1cg">
+                      Your Name
                     </label>
                   </div>
-                </div>
-                <div className="col-md-6 mb-4">
-                  <select className="select">
-                    <option value={1} disabled="">
-                      Gender
-                    </option>
-                    <option value={2}>Female</option>
-                    <option value={3}>Male</option>
-                    <option value={4}>Other</option>
-                  </select>
-                </div>
-              </div>
-              <div className="mb-4">
-                <select className="select">
-                  <option value={1} disabled="">
-                    Class
-                  </option>
-                  <option value={2}>Class 1</option>
-                  <option value={3}>Class 2</option>
-                  <option value={4}>Class 3</option>
-                </select>
-              </div>
-              <div className="row mb-4 pb-2 pb-md-0 mb-md-5">
-                <div className="col-md-6">
-                  <div className="form-outline">
+                  <div className="form-outline mb-4">
                     <input
-                      type="text"
-                      id="form3Example1w"
-                      className="form-control"
+                      type="email"
+                      id="form3Example3cg"
+                      className="form-control form-control-lg"
                     />
-                    <label className="form-label" htmlFor="form3Example1w">
-                      Registration code
+                    <label className="form-label" htmlFor="form3Example3cg">
+                      Your Email
                     </label>
                   </div>
-                </div>
+                  <div className="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="form3Example4cg"
+                      className="form-control form-control-lg"
+                    />
+                    <label className="form-label" htmlFor="form3Example4cg">
+                      Password
+                    </label>
+                  </div>
+                  <div className="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="form3Example4cdg"
+                      className="form-control form-control-lg"
+                    />
+                    <label className="form-label" htmlFor="form3Example4cdg">
+                      Repeat your password
+                    </label>
+                  </div>
+                  <div className="form-check d-flex justify-content-center mb-5">
+                    <input
+                      className="form-check-input me-2"
+                      type="checkbox"
+                      defaultValue=""
+                      id="form2Example3cg"
+                    />
+                    <label className="form-check-label" htmlFor="form2Example3g">
+                      I agree all statements in{" "}
+                      <a href="#!" className="text-body">
+                        <u>Terms of service</u>
+                      </a>
+                    </label>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                    >
+                      Register
+                    </button>
+                  </div>
+                  <p className="text-center text-muted mt-5 mb-0">
+                    Have already an account?{" "}
+                    <a href="#!" className="fw-bold text-body">
+                      <u>Login here</u>
+                    </a>
+                  </p>
+                </form>
               </div>
-              <button type="submit" className="btn btn-success btn-lg mb-1">
-                Submit
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
+  
   )
 }
 
