@@ -6,4 +6,4 @@ const AddPackage = () => {
   )
 }
 
-export default AddPackage
+export default AddPackage;

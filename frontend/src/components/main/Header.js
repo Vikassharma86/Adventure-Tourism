@@ -54,6 +54,11 @@ const Header = () => {
                 Signin
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="btn btn-outline-white" to="/admin/addlocation">
+                Add New Location
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

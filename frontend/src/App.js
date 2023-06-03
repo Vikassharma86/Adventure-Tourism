@@ -14,6 +14,7 @@ import AdminAuth from "./auth/AdminAuth";
 import UserProvider from "./context/UserProvider";
 import AdminProvider from "./context/AdminProvider";
 import { useState } from "react";
+import AddLocation from "./components/admin/AddLocation";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(
@@ -39,6 +40,7 @@ function App() {
               path="admin"
             >
               <Route element={<AdminProfile />} path="profile" />
+              <Route element={<AddLocation />} path="addlocation" />
             </Route>
 
             <Route element={<Main />} path="main">
