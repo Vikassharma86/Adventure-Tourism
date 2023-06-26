@@ -59,6 +59,11 @@ const Header = () => {
                 Add New Location
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="btn btn-outline-white" to="/main/browse">
+                Browse Location
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

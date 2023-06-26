@@ -15,6 +15,7 @@ import UserProvider from "./context/UserProvider";
 import AdminProvider from "./context/AdminProvider";
 import { useState } from "react";
 import AddLocation from "./components/admin/AddLocation";
+import ListEquipment from "./components/main/BrowseLocation";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(
@@ -46,6 +47,7 @@ function App() {
             <Route element={<Main />} path="main">
               <Route element={<Home />} path="home" />
               <Route element={<Signin />} path="signin" />
+              <Route element={<ListEquipment />} path="browse" />
               <Route element={<Signup />} path="signup" />
             </Route>
 

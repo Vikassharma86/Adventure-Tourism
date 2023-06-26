@@ -87,6 +87,7 @@ const AddLocation = () => {
                     <div className=" mb-4">
                       <label className="form-label" htmlFor="state">
                         State
+               
                       </label>
                       <input type="text" id="state" onChange={locationform.handleChange} value={locationform.values.state} className="form-control form-control-lg" />
                     </div>
